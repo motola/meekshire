@@ -1,0 +1,297 @@
+* {
+    list-style-type: none;
+    box-sizing: border-box;
+}
+a {
+    list-style-type: none;
+    text-decoration:none;
+    color: none;
+}
+
+body { 
+    background:#e6e6e6;
+    Width: 100%;  
+    margin:0;
+    padding:0;
+}
+header {
+    width:100%;
+    background: white;
+    display: block;
+    color: grey;
+    clear: both;
+    padding: 2% 0;
+    overflow: hidden;
+    width:100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    /* box-shadow: 2px 3px black; */
+}
+
+.row {
+    clear:both;
+}
+.clearfix {
+    content: "";
+    display: table;
+    clear:both;
+
+}
+
+
+header ul {
+    padding: 0;
+    margin:0;
+    list-style-type: none;
+
+}
+
+header .logo img {
+    margin-top: 20px;
+    float: left;
+    width: 150px;
+    margin: 0;
+}
+/* #first-nav {
+    padding-top: 0.2e m;
+    text-align: right;
+    font-size:27px; */
+/* } */
+#first-nav li a {
+    color:black;
+    font-family: 'Montserrat', 'Roboto Regukar', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.limited {
+    padding-left: 10px;
+}
+
+  #search {
+      display:none;
+  }
+
+  li input[type=image] {
+    height: 22px;
+    width: 21px;
+    color: gray;
+    margin-top: 0.7em;
+    display: block;
+}
+
+  .left li {
+      float:right;
+      display: block;
+      padding-left:2%;
+      padding-top: 0.2em;
+  }
+
+   li button#hamburger {
+       float: right;
+       font-size: 27px;
+       background: none;
+       border: none;
+   }
+
+
+  #hamburgerContent.open {
+      display: block;
+      background: #f9f9f9;
+      width: 60%;
+      right: 0;
+      z-index:1;
+      overflow:hidden;
+      height:280px;
+      position:fixed;
+      top:0;
+  }
+
+  #hamburgerContent.open li {
+    padding-top: 15px;
+    text-align: left;
+
+  }
+
+  #hamburgerContent {
+      display: none;
+  }
+
+  div img {
+      width: 30px;
+      
+     
+  }
+/*   
+/* GRID LAYOUT *
+.small-12 {
+    width: 100%;
+}
+
+.small-8 {
+    width: 66%;
+
+}
+
+.large-2 {
+    width: 16.666%;
+}
+
+.medium-6 {
+     width: 50%
+}
+
+.medium-5 {
+    width: 41.6%;
+}
+.large-3 {
+    width: 25%;
+}
+.large-1 {
+    width: 8.333%;
+}
+
+.medium-4 {
+    width:33.333333%;
+}
+
+/* GRID LAYOUT
+
+input[type=image] {
+    width: 22px;
+    float: left;
+    position:absolute;
+    top: 8px;
+    left: 10px
+}
+
+input::placeholder {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    left: 20px; 
+    margin: 0 20px;
+
+}
+
+input[type=search] {
+    padding: 5px;
+    padding-left:25px;
+    font-size: 10px;
+    border: 1px solid grey;
+    border-radius: 4px 5px;
+    float:left;
+    box-shadow: 0 0.5px 0 rgba(0,0,0,0.4);
+    /* box-shadow: 1px 1px #888888; 
+    width: 20%;
+  }*/
+
+.align {
+    padding-top: 0.6em;
+}
+.column {
+    float:left;
+}
+
+.text-align {
+    margin-left: 2.5%;
+    margin-right: 1.5%;
+}
+
+.text-align1 {
+    margin-right:0.5%;
+}
+
+.text-align2 {
+    margin-left:7.5%;
+}
+
+.font-text a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+
+ #first-nav li .dropbtn img {
+    max-width: 15%;
+    margin-top: -2.7vmax;
+     
+}
+
+#first-nav li .dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+  } 
+
+  #first-nav li .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #first-nav li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  #first-nav li .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  #first-nav li .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  #first-nav li .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  #first-nav li .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+  /* /* white background after the header  */
+
+  .second-nav {
+      width: 100%;
+      padding-left:25%;
+      padding-right: 20%;
+      top: 55.5px;
+      overflow:hidden;
+      position: fixed;
+      border-top: 1px solid grey;
+      border-bottom: 1px solid grey;
+      background-color: whitesmoke;
+      color:red;
+      display: inline-block;
+      /* box-shadow: 0 1px 5px rgba(0,0,0,0.4); */
+  }
+
+ 
+  .second-nav li {
+      float:left;
+      text-align: center;
+      font-family: 'montserrat', sans-serif;
+      font-size:11px;
+      font-weight: 300;
+        padding: 0 1.5em 0;
+        border-left: 1px solid #888999;
+        margin-bottom: 10px;
+  }
+
+  .second-nav li:first-child {
+    border: none;
+    padding:0 1.5em 0 0 
+}
+
+/* list of items and order items after sub header */
+
