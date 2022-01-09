@@ -1,0 +1,40 @@
+{
+  "name": "meekshire",
+  "version": "1.0.0",
+  "description": "An Ecommerce Web Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "webpack --mode development",
+    "build-prod": "webpack --mode production"
+  },
+  "repository": {
+    "start": "nodemon server.js",
+    "type": "git",
+    "url": "git+https://github.com/motola/meekshire.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/motola/meekshire/issues"
+  },
+  "homepage": "https://github.com/motola/meekshire#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^5.5.0",
+    "nodemon": "^2.0.15",
+    "path-browserify": "^1.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.0.1",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  }
+}

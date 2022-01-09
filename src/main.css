@@ -1,3 +1,4 @@
+/* GeneraL RULES */
 * {
     list-style-type: none;
     box-sizing: border-box;
@@ -14,6 +15,7 @@ body  {
     margin:0;
     padding:0;
 }
+/* fROM Logo to Hamburger Menu */
 header {
     background: white;
     color: grey;
@@ -117,7 +119,8 @@ header .logo img {
       border-top-left-radius: 8px 10px;
       border-top-right-radius: 8px 10px ;
       /* right: 0; */   
-      z-index:1;
+      z-index:3;
+      opacity: 2;
       overflow:hidden;
       height:275px;
       position:fixed;
@@ -220,6 +223,7 @@ input[type=search] {
       text-align: center;
       height: 8vh;
       top: 55px;
+      left:-0.5px;
       margin-bottom: 10%;
       position: fixed;
       border-top: 1px solid grey;
@@ -230,6 +234,10 @@ input[type=search] {
       display: inline-block;
       /* box-shadow: 0 1px 5px rgba(0,0,0,0.4); */
   }
+
+
+
+
 
   .second-nav ul {
       bottom: 15%;
@@ -243,9 +251,9 @@ input[type=search] {
       font-family: 'montserrat', sans-serif;
       font-size:12.5px;
       font-weight: 300;
-        padding: 0 1.5em 0;
-        margin-bottom: 1.5%;
-        border-left: 1px solid #888999;
+      padding: 0 1.5em 0;
+      margin-bottom: 1.5%;
+      border-left: 1px solid #888999;
 
   } 
 
@@ -302,14 +310,67 @@ aside nav li {
 article nav li a {
     color: black;
 }
+/* Styling Products page */
 
 main {
-    width: 100%;
-    margin-top:-9px;
+    margin-top:-19px;
     white-space: none;
     display: block;
-    background-color: none;
+    background-color: white;
+    list-style-type: none;
 }
+
+.foodwall li img {
+  max-width: 25px;
+  margin:0;
+}
+
+ .buy {
+ float:right;
+} 
+/* // Food Wall header Desgin - Start */
+main .foodwall {
+    width:100%;
+    background-color:white;
+    padding:5%;
+    margin-bottom: -15px;
+    margin:0;
+    padding-top: 60px;
+    padding-bottom:0;
+    position: fixed;
+    z-index:3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main .foodwall li {
+    display: inline-block;
+    vertical-align: top;
+}
+main .foodwall li h3 {
+    padding-left:13px;
+    margin-top: -4px;
+    font-size: 30px;
+}
+.products {
+    padding-top: 110px;
+  
+}
+
+.prod-class li img {
+    width: 20px;
+    max-height: 3vh;
+}
+section .prod-class {
+    margin-top: 6px;
+    display:inline-block;
+    width: 100%;
+}
+
+
+.prod-class li {
+    width: 9%;
+}
+/* Styling Products page - end */
 
 .small-1s {
     width:83%;
@@ -379,7 +440,7 @@ section li {
     font-weight: bold;
     width:50%;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
 }
 
  section li.right{
@@ -435,7 +496,7 @@ mini-section li {
 
 
 .footer li{
-    width: 32.5%;
+    width: 23%;
     text-align: center;
     display:inline-block;
 }
