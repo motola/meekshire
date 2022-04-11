@@ -7,7 +7,9 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.js',
-        publicPath: '/'
+        publicPath: '/',
+        libraryTarget: 'window',
+        libraryExport: 'default'
     },
     module: {
         rules: [
@@ -37,7 +39,8 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: './src/index.html'
         })
-    ]
+    ],
+    
     
 }
 

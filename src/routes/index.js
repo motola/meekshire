@@ -3,6 +3,8 @@ import New from '../controllers/New.js';
 import Dashboard from '../controllers/Dashboard.js'
 import product from '../controllers/product.js';
 import wall from '../controllers/wall.js';
+import Order from '../controllers/orders.js';
+import User from '../controllers/users.js'
 
 
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$");  
@@ -32,7 +34,9 @@ const getParams = match => {
             {path: "/posts", view: Dashboard},
             {path: "/posts/:id", view: Dashboard},
             {path: "/product", view: product},
+            {path: "/order", view: Order},
             {path: "/wall", view: wall},
+            {path: "/users", view: User}
             // {path: "/settings", view: () => console.log("viewing settings")},
         ];
 
