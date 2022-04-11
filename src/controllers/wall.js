@@ -12,6 +12,9 @@ export default class extends AbstractView {
     async getHtml() {
         const div = document.createElement('div');
         div.innerHTML = Item
+
+
+        
     return div
 }
 
